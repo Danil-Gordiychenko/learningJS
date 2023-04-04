@@ -151,3 +151,18 @@
 // console.log(parseFloat('a123'));
 
 // console.log(7e1);
+
+const data1 = [49, 51, 63];
+const data2 = [31, 29, 43, 58, 52];
+
+function printHumiditiesForecast(numericArray) {
+  let stringResult = '... ';
+
+  for (let i = 0; i < numericArray.length; i++) {
+    stringResult += `${numericArray[i]}% humidity in ${[i + 1]} days... `;
+  }
+
+  return stringResult;
+}
+
+console.log(printHumiditiesForecast(data2));
